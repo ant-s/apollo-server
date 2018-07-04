@@ -70,6 +70,7 @@ The function to create a context for subscriptions includes `connection`, while 
 ```js
 const server = new ApolloServer({
   schema,
+  resolvers,
   context: async ({ req, connection }) => {
     if (connection) {
       // check connection for metadata
